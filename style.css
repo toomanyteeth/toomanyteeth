@@ -1,0 +1,15 @@
+@font-face {
+    font-family: 'Barlow Semi Condensed';
+    src: url('fonts/BarlowSemiCondensed-Regular.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-size: 1.4em;
+}
+
+.tile-image {
+    max-height: 10em;
+}

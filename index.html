@@ -2,17 +2,43 @@
 
 <html lang="en">
 
-  <head>
-    <meta charset="utf-8">
+    <head>
+        <meta charset="utf-8">
 
-    <title>Meena Vempaty</title>
-    <meta name="description" content="Meena Vempaty's art and interactive portfolio.">
-    <meta name="author" content="Meena Vempaty">
+        <title>Meena Vempaty</title>
+        <meta name="description" content="Meena Vempaty's art and interactive portfolio.">
+        <meta name="author" content="Meena Vempaty">
 
-  </head>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <script src="pieces.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.4.0/handlebars.js"></script>
+    </head>
 
-  <body>
-    Here we go!
-  </body>
+    <body>
+        <div id="header">
+            <div id="title">Meena Vempaty</div>
+            <ul id="links">
+                <li><a href="">about</a></li>
+                <li><a href="https://www.instagram.com/infinitedimensionalvectorcake/" target="_blank">instagram</a></li>
+                <li><a href="mailto:meenamakesthings@gmail.com">email</a></li>
+            </ul>
+        </div>
+        Under construction!
+        <div id="content">
+            <ul id="tiles"><script id="tilesTemplate" type="text/x-handlebars-template">
+                {{#each pieces}}
+                <li id="tile">
+                    <img class="tile-image" src="{{imageURL}}">
+                    <p class="tile-description">{{description}}</p>
+                </li>
+                {{/each}}
+            </script></ul>
+            <script>
+                var template = Handlebars.compile(document.getElementById('tilesTemplate').innerHTML);
+                document.getElementById('tiles').innerHTML = template(pieces);
+            </script>
+        </div>
+    </body>
 
 </html>
