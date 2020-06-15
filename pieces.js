@@ -79,7 +79,6 @@ var pieces = {
                 "images/misc - donut cat.png",
                 "images/misc - devi.png",
                 "images/misc - iso plants.png",
-                "images/plantstellation - board.png",
             ],
             //title: "Miscellaneous Illustrations"
         },
