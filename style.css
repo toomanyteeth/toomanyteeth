@@ -1,15 +1,111 @@
 @font-face {
-    font-family: 'Barlow Semi Condensed';
-    src: url('fonts/BarlowSemiCondensed-Regular.otf') format('opentype');
+    font-family: 'Courier Prime';
+    src: url('fonts/CourierPrime-Regular.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
 
-body {
-    font-family: 'Barlow Semi Condensed', sans-serif;
-    font-size: 1.4em;
+.accent-text {
+    background: -webkit-linear-gradient(45deg, DarkOrchid, RoyalBlue, Teal);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
-.tile-image {
-    max-height: 10em;
+a:link {
+  color: RoyalBlue;
+}
+
+a:visited {
+  color: DarkOrchid;
+}
+
+a:hover {
+  color: Teal;
+}
+
+a:active {
+  font-weight: 700;
+}
+
+p {
+    max-width: 60em;
+}
+
+body {
+    font-family: 'Courier Prime', monospace;
+    font-size: 1em;
+    margin: 3em;
+}
+
+#header {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    margin: -3em;
+    padding: 1.5em 3em;
+    background-image: linear-gradient(rgba(255,255,255,1) 0%, rgba(255,255,255,0.9) 50%, rgba(255,255,255,0) 100%);
+}
+
+#title {
+    font-size: 4em;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    display: inline;
+}
+
+#links {
+    font-size: 4em;
+    display: inline;
+    padding-left: 0.1em;
+}
+
+.about-link {
+    list-style: none;
+    display: inline;
+}
+
+.icon {
+    max-height: 0.6em;
+    max-width: 0.6em;
+    margin: 0 -0.2em 0 0.5em ;
+}
+
+#about {
+    margin: 3em 0;
+}
+
+#pieces {
+    padding: 0;
+    margin: 0;
+}
+
+.piece {
+    list-style: none;
+}
+
+.piece-title {
+    font-weight: 700;
+}
+
+.piece-images {
+    padding: 0;
+    list-style: none;
+}
+
+.image-list-item {
+    display: inline-block;
+    margin-right: -0.25em;
+}
+
+.piece-image {
+    max-height: 32em;
+    max-width: 32em;
+    box-shadow: 0 0 0.4em rgba(0, 0, 0, 0.33);
+    margin: 0.4em;
+}
+
+hr {
+    margin: 3em 0;
+    border: 1px solid black;
 }
