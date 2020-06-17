@@ -34,12 +34,13 @@ p {
 body {
     font-family: 'Courier Prime', monospace;
     font-size: 1em;
-    margin: 3em;
+    margin: 2em;
 }
 
 #header {
     position: -webkit-sticky;
     position: sticky;
+    font-size: 3em;
     top: 0;
     width: 100%;
     margin: -3em;
@@ -48,16 +49,14 @@ body {
 }
 
 #title {
-    font-size: 4em;
     text-transform: uppercase;
     letter-spacing: 0.2em;
     display: inline;
 }
 
 #links {
-    font-size: 4em;
     display: inline;
-    padding-left: 0.1em;
+    padding-left: 0em;
 }
 
 .about-link {
@@ -72,7 +71,7 @@ body {
 }
 
 #about {
-    margin: 3em 0;
+    margin: 2em 0;
 }
 
 #pieces {
@@ -99,13 +98,26 @@ body {
 }
 
 .piece-image {
-    max-height: 32em;
-    max-width: 32em;
     box-shadow: 0 0 0.4em rgba(0, 0, 0, 0.33);
     margin: 0.4em;
+    max-height: 32em;
+    max-width: 32em;
 }
 
 hr {
-    margin: 3em 0;
+    margin: 2em 0;
     border: 1px solid black;
+}
+
+@media only screen and (max-width: 600px) {
+
+    #header {
+        font-size: 1.5em;
+    }
+
+    .piece-image {
+        width: 100%;
+        height: auto;
+    }
+
 }
