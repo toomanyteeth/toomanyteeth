@@ -10,6 +10,13 @@ var pieces = {
         },
         {
             images: [
+                "images/tvvr - sutro.jpg",
+                "images/tvvr - holiday.jpg",
+            ],
+            title: "TVVR Album Covers",
+        },
+        {
+            images: [
                 "images/telugu women - bomber.png",
                 "images/telugu women - puffer.png",
                 "images/telugu women - cardigan.png",
@@ -75,6 +82,9 @@ var pieces = {
         },
         {
             images: [
+                "images/misc - science poster.png",
+                "images/misc - chillhop raccoon.png",
+                "images/misc - muggu mask.jpg",
                 "images/misc - xwp map.png",
                 "images/misc - donut cat.png",
                 "images/misc - devi.png",
