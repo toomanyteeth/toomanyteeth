@@ -1,0 +1,74 @@
+<!doctype html>
+
+<html lang="en">
+
+    <head>
+
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>Meena Vempaty</title>
+        <meta name="description" content="Meena Vempaty's illustration and interactive portfolio.">
+        <meta name="author" content="Meena Vempaty">
+
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <script src="design pieces.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.4.0/handlebars.js"></script>
+
+    </head>
+
+    <body>
+
+        <div id="header">
+            <div id="title" class="accent-text">Meena Vempaty</div>
+            <ul id="links">
+                <li class="about-link"><a href="https://www.linkedin.com/in/makesthings/" target="_blank"><img class="icon" src="icons/linkedin.svg"></a></li>
+                <li class="about-link"><a href="https://www.instagram.com/infinitedimensionalvectorcake/" target="_blank"><img class="icon" src="icons/instagram.svg"></a></li>
+                <li class="about-link"><a href="mailto:meenamakesthings@gmail.com"><img class="icon" src="icons/email.svg"></a></li>
+            </ul>
+        </div>
+
+        <div id="content">
+
+            <p id="about">
+                Nice to meet you! I'm a designer with with <span id="experience">#</span> years of experience. I currently work as an art director at Deckhand Design.
+            </p>
+            <script>
+                document.getElementById("experience").innerHTML = new Date().getFullYear() - 2015;
+            </script>
+
+            <ul id="pieces"><script id="piecesTemplate" type="text/x-handlebars-template">
+                {{#each pieces}}
+                <hr>
+                <li class="piece">
+                    <ul class="piece-images">
+                        {{#each videos}}
+                        <li class="image-list-item">
+                            <video class="piece-media piece-video" poster="{{this}}.png" width="960" height="540" controls>
+                                <source src="{{this}}.mp4" type="video/mp4">
+                                Your browser does not support the HTML video tag.
+                            </video>
+                        </li>
+                        {{/each}}
+                        {{#each images}}
+                        <li class="image-list-item">
+                            <img class="piece-media piece-image" src="{{this}}">
+                        </li>
+                        {{/each}}
+                    </ul>
+                    <p class="piece-info"><span class="piece-title accent-text">{{title}}</span> <span class="piece-description">{{{description}}}</span></p>
+                </li>
+                {{/each}}
+            </script></ul>
+
+            <script>
+                var template = Handlebars.compile(document.getElementById('piecesTemplate').innerHTML);
+                document.getElementById('pieces').innerHTML = template(pieces);
+            </script>
+
+        </div>
+
+    </body>
+
+</html>

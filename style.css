@@ -1,6 +1,20 @@
 @font-face {
-    font-family: 'Courier Prime';
-    src: url('fonts/CourierPrime-Regular.ttf') format('truetype');
+    font-family: 'Chaparral';
+    src: url('fonts/ChaparralPro-Regular.otf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Orator';
+    src: url('fonts/OratorStd.otf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Kubasta';
+    src: url('fonts/kubasta.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
@@ -32,9 +46,11 @@ p {
 }
 
 body {
-    font-family: 'Courier Prime', monospace;
-    font-size: 1em;
+    font-family: 'Chaparral', serif;
+    font-size: 1.2em;
+    line-height: 1.4;
     margin: 2em;
+    color: #171717
 }
 
 #header {
@@ -43,14 +59,15 @@ body {
     font-size: 3em;
     top: 0;
     width: 100%;
-    margin: -3em;
-    padding: 1.5em 3em;
+    margin: -0.5em 0;
     background-image: linear-gradient(rgba(255,255,255,1) 0%, rgba(255,255,255,0.9) 50%, rgba(255,255,255,0) 100%);
 }
 
 #title {
     text-transform: uppercase;
-    letter-spacing: 0.2em;
+    font-family: 'Kubasta', monospace;
+    font-size: 1.5em;
+    letter-spacing: 0.1em;
     display: inline;
 }
 
@@ -62,12 +79,17 @@ body {
 .about-link {
     list-style: none;
     display: inline;
+    margin: 0 -0.2em 0 0.5em;
 }
 
 .icon {
     max-height: 0.6em;
     max-width: 0.6em;
-    margin: 0 -0.2em 0 0.5em ;
+}
+
+.icon:hover {
+    -webkit-filter: drop-shadow(0 0 0.1em teal);
+    filter: drop-shadow(0 0 0.1em teal);
 }
 
 #about {
@@ -84,7 +106,9 @@ body {
 }
 
 .piece-title {
-    font-weight: 700;
+    font-family: 'Orator', monospace;
+    font-weight: 900;
+    margin-right: 0.5em;
 }
 
 .piece-images {
@@ -97,25 +121,44 @@ body {
     margin-right: -0.25em;
 }
 
-.piece-image {
+.piece-media {
     box-shadow: 0 0 0.4em rgba(0, 0, 0, 0.33);
     margin: 0.4em;
+}
+
+.piece-image {
     max-height: 32em;
     max-width: 32em;
 }
 
+.piece-video {
+    max-height: 18em;
+    max-width: 32em;
+    background-color: #171717;
+}
+
 hr {
     margin: 2em 0;
-    border: 1px solid black;
+    border: 1px solid #cccccc;
 }
 
 @media only screen and (max-width: 600px) {
 
     #header {
-        font-size: 1.5em;
+        font-size: 2em;
+        line-height: 0.8
     }
 
-    .piece-image {
+    #links {
+        display: block;
+        margin: 0.5em 0;
+    }
+
+    .about-link {
+        margin: 0 0.3em 0 0;
+    }
+
+    .piece-media {
         width: 100%;
         height: auto;
     }
