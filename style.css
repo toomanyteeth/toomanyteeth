@@ -118,12 +118,11 @@ body {
 
 .image-list-item {
     display: inline-block;
-    margin-right: -0.25em;
 }
 
 .piece-media {
     box-shadow: 0 0 0.4em rgba(0, 0, 0, 0.33);
-    margin: 0.4em;
+    margin: 0.4em 0.8em 0.4em 0;
 }
 
 .piece-image {
@@ -146,7 +145,7 @@ hr {
 
     #header {
         font-size: 2em;
-        line-height: 0.8
+        line-height: 0.8;
     }
 
     #links {
