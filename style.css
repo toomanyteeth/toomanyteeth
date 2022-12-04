@@ -157,4 +157,8 @@ hr {
         height: auto;
     }
 
+    .piece-video {
+        max-width: 100%;
+    }
+
 }
