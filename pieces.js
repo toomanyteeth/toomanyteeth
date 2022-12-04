@@ -1,12 +1,10 @@
 var pieces = {
     pieces: [
         {
-            images: [
-                "images/the scarytale ball - a.png",
-                "images/the scarytale ball - b.png",
-                "images/the scarytale ball - c.png",
+            videos: [
+                "Meena Vempaty Motion Graphics Reel 2022",
             ],
-            //title: "At The Scarytale Ball",
+            title: "Motion Graphics Reel",
         },
         {
             images: [
@@ -14,6 +12,18 @@ var pieces = {
                 "images/tvvr - holiday.jpg",
             ],
             title: "TVVR Album Covers",
+        },
+        {
+            images: [
+                "images/oneconcern title slide 1.png",
+                "images/oneconcern title slide 2.png",
+                "images/oneconcern title slide 3.png",
+                "images/oneconcern title slide 4.png",
+                "images/oneconcern slide 1.png",
+                "images/oneconcern slide 2.png",
+            ],
+            title: "OneConcern Corporate Pitch Deck Slides",
+            //description: "Created slides, diagrams, and composited art for OneConcern's corporate pitch deck."
         },
         {
             images: [
@@ -47,43 +57,26 @@ var pieces = {
         },
         {
             images: [
-                "images/endless rainbows - screenshot.png",
-                "images/endless rainbows - installation.jpg",
+                "images/the scarytale ball - a.png",
+                "images/the scarytale ball - b.png",
+                "images/the scarytale ball - c.png",
             ],
-            title: "endless rainbows",
-            description: "Ride a horse as shirtless Vladimir Putin. Play it <a href=\"https:\/\/toomanyteeth.github.io\/endless-rainbows\/\" target=\"_blank\">here<\/a>."
-        },
-        {
-            images: [
-                "images/avakai - monsoon.jpg",
-                "images/avakai - fall.jpg",
-                "images/avakai - winter.jpg",
-                "images/avakai - summer.jpg",
-            ],
+            //title: "At The Scarytale Ball",
         },
         {
             images: [
                 "images/myth book - the elephant god.png",
                 "images/myth book - the witch and the goddess.png",
-                "images/myth book - the egg came first.png",
                 "images/myth book - flute.png",
-                "images/myth book - a heavenly war.png",
-                "images/myth book - ramayana.png",
             ],
             //title: "Mythology Illustrations",
             description: "Illustrations for <a href=\"https:\/\/www.goodreads.com\/book\/show\/52050947-love-pride-virtue-and-fate\" target=\"_blank\">Love, Pride, Virtue, and Fate by Bharat Krishan<\/a>"
         },
         {
             images: [
-                "images/sad dessert - ice cream.png",
-                "images/sad dessert - donut.png",
-                "images/sad dessert - cake.png",
-            ],
-        },
-        {
-            images: [
                 "images/misc - science poster.png",
                 "images/misc - chillhop raccoon.png",
+                "images/avakai - winter.jpg",
                 "images/misc - muggu mask.jpg",
                 "images/misc - xwp map.png",
                 "images/misc - donut cat.png",

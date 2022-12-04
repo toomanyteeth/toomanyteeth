@@ -32,22 +32,33 @@
         <div id="content">
 
             <p id="about">
-                Nice to meet you! I'm an artist and designer with with <span id="experience">#</span> years of experience. I work as an art director at Deckhand Design, and I'm currently looking for ways to volunteer my illustration and design skills for charity.
+                Nice to meet you! I'm an artist and designer with <span id="experience">#</span> years of experience. I'm currently looking for projects and passionate teams where I can put my motion graphics and illustration skills to work.
             </p>
             <script>
                 document.getElementById("experience").innerHTML = new Date().getFullYear() - 2015;
             </script>
 
-            <ul id="pieces"><script id="piecesTemplate" type="text/x-handlebars-template">
+            <ul id="pieces">
+                <script id="piecesTemplate" type="text/x-handlebars-template">
                 {{#each pieces}}
                 <hr>
                 <li class="piece">
+                    <p class="piece-info"><span class="piece-title accent-text">{{title}}</span> <span class="piece-description">{{{description}}}</span></p>
                     <ul class="piece-images">
+                        {{#each videos}}
+                        <li class="image-list-item">
+                            <video class="piece-media piece-video" poster="{{this}}.png" width="1920" height="1080" controls>
+                                <source src="{{this}}.mp4" type="video/mp4">
+                                Your browser does not support the HTML video tag.
+                            </video>
+                        </li>
+                        {{/each}}
                         {{#each images}}
-                        <li class="image-list-item"><img class="piece-media piece-image" src="{{this}}"></li>
+                        <li class="image-list-item">
+                            <img class="piece-media piece-image" src="{{this}}">
+                        </li>
                         {{/each}}
                     </ul>
-                    <p class="piece-info"><span class="piece-title accent-text">{{title}}</span> <span class="piece-description">{{{description}}}</span></p>
                 </li>
                 {{/each}}
             </script></ul>

@@ -1,23 +1,16 @@
 @font-face {
-    font-family: 'Chaparral';
-    src: url('fonts/ChaparralPro-Regular.otf') format('truetype');
+    font-family: 'Lato';
+    src: url('fonts/Lato-Regular.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
-    font-family: 'Orator';
-    src: url('fonts/OratorStd.otf') format('truetype');
-    font-weight: normal;
+    font-family: "VictorMono";
+    src: url("fonts/VictorMono-SemiBold.ttf") format("truetype");
+    font-weight: 600;
     font-style: normal;
-}
-
-@font-face {
-    font-family: 'Kubasta';
-    src: url('fonts/kubasta.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
+  }
 
 .accent-text {
     background: -webkit-linear-gradient(45deg, DarkOrchid, RoyalBlue, Teal);
@@ -46,11 +39,11 @@ p {
 }
 
 body {
-    font-family: 'Chaparral', serif;
-    font-size: 1.2em;
+    font-family: 'Lato', sans-serif;
+    font-size: 1.1em;
     line-height: 1.4;
     margin: 2em;
-    color: #171717
+    color: #171717;
 }
 
 #header {
@@ -60,14 +53,14 @@ body {
     top: 0;
     width: 100%;
     margin: -0.5em 0;
-    background-image: linear-gradient(rgba(255,255,255,1) 0%, rgba(255,255,255,0.9) 50%, rgba(255,255,255,0) 100%);
+    backdrop-filter: blur(10px);
 }
 
 #title {
-    text-transform: uppercase;
-    font-family: 'Kubasta', monospace;
-    font-size: 1.5em;
-    letter-spacing: 0.1em;
+    //text-transform: uppercase;
+    font-family: 'VictorMono', monospace;
+    font-size: 1em;
+    letter-spacing: 0.13em;
     display: inline;
 }
 
@@ -106,8 +99,9 @@ body {
 }
 
 .piece-title {
-    font-family: 'Orator', monospace;
-    font-weight: 900;
+    font-family: 'VictorMono', monospace;
+    font-weight: 600;
+    font-size: 1.3em;
     margin-right: 0.5em;
 }
 
@@ -131,20 +125,21 @@ body {
 }
 
 .piece-video {
-    max-height: 18em;
-    max-width: 32em;
+    max-width: 80%;
+    height: auto;
     background-color: #171717;
 }
 
 hr {
     margin: 2em 0;
     border: 1px solid #cccccc;
+    background-color: #cccccc;
 }
 
 @media only screen and (max-width: 600px) {
 
     #header {
-        font-size: 2em;
+        font-size: 1.5em;
         line-height: 0.8;
     }
 
