@@ -7,6 +7,13 @@ var pieces = {
             title: "Motion Graphics Reel",
         },
         {
+            videos: [
+                "Rebrand Reel 2023",
+            ],
+            title: "Rebrand Reel",
+            description: "Work done for one company across three rebrands."
+        },
+        {
             images: [
                 "images/tvvr - sutro.jpg",
                 "images/tvvr - holiday.jpg",
