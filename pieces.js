@@ -15,22 +15,56 @@ var pieces = {
         },
         {
             images: [
+                "images/google crisis response/1.png",
+                "images/google crisis response/2.png",
+                "images/google crisis response/3.png",
+            ],
+            title: "Google Crisis Response Slides",
+        },
+        {
+            images: [
+                "images/oneconcern/1.png",
+                "images/oneconcern/2.png",
+                "images/oneconcern/3.png",
+                "images/oneconcern/4.png",
+                "images/oneconcern/5.png",
+                "images/oneconcern/6.png",
+            ],
+            title: "OneConcern Corporate Pitch Deck Slides",
+            //description: "Created slides, diagrams, and composited art for OneConcern's corporate pitch deck."
+        },
+        {
+            images: [
+                "images/new relic/1.png",
+                "images/new relic/2.png",
+                "images/new relic/3.png",
+                "images/new relic/4.png",
+            ],
+            title: "New Relic Corporate Pitch Deck Slides",
+        },
+        {
+            images: [
+                "images/google wwd/1.png",
+                "images/google wwd/2.png",
+                "images/google wwd/3.png",
+                "images/google wwd/4.png",
+            ],
+            title: "Google WWD Slides",
+        },
+        {
+            images: [
+                "images/airtable/1.png",
+                "images/airtable/2.png",
+                "images/airtable/3.png",
+            ],
+            title: "Airtable Corporate Pitch Deck Slides",
+        },
+        {
+            images: [
                 "images/tvvr - sutro.jpg",
                 "images/tvvr - holiday.jpg",
             ],
             title: "TVVR Album Covers",
-        },
-        {
-            images: [
-                "images/oneconcern title slide 1.png",
-                "images/oneconcern title slide 2.png",
-                "images/oneconcern title slide 3.png",
-                "images/oneconcern title slide 4.png",
-                "images/oneconcern slide 1.png",
-                "images/oneconcern slide 2.png",
-            ],
-            title: "OneConcern Corporate Pitch Deck Slides",
-            //description: "Created slides, diagrams, and composited art for OneConcern's corporate pitch deck."
         },
         {
             images: [

@@ -12,9 +12,11 @@
         <meta name="author" content="Meena Vempaty">
 
         <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="stylesheet" type="text/css" href="lightbox/lightbox.css"/>
         <script src="pieces.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.4.0/handlebars.js"></script>
+        <script src="lightbox/lightbox.js"></script>
 
     </head>
 
@@ -32,7 +34,7 @@
         <div id="content">
 
             <p id="about">
-                Nice to meet you! I'm an artist and designer with <span id="experience">#</span> years of experience. I'm currently looking for projects and passionate teams where I can put my motion graphics and illustration skills to work.
+                Nice to meet you! I'm an artist and designer with <span id="experience">#</span> years of experience. Contact me here: <a href="mailto:meenamakesthings@gmail.com">meenamakesthings@gmail.com</a>
             </p>
             <script>
                 document.getElementById("experience").innerHTML = new Date().getFullYear() - 2015;
@@ -55,7 +57,9 @@
                         {{/each}}
                         {{#each images}}
                         <li class="image-list-item">
-                            <img class="piece-media piece-image" src="{{this}}">
+                            <a href="{{this}}" data-lightbox="lightbox">
+                                <img class="piece-media piece-image" src="{{this}}">
+                            </a>
                         </li>
                         {{/each}}
                     </ul>
@@ -66,6 +70,15 @@
             <script>
                 var template = Handlebars.compile(document.getElementById('piecesTemplate').innerHTML);
                 document.getElementById('pieces').innerHTML = template(pieces);
+                lightbox.option({
+                    'albumLabel': "%1/%2",
+                    'disableScrolling': true,
+                    'fadeDuration': 100,
+                    'imageFadeDuration': 100,
+                    'resizeFadeDuration': 100,
+                    'showImageNumberLabel': false,
+                    'wrapAround': true
+                })
             </script>
 
         </div>
