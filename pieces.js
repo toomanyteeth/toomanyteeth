@@ -15,14 +15,6 @@ var pieces = {
         },
         {
             images: [
-                "images/google crisis response/1.png",
-                "images/google crisis response/2.png",
-                "images/google crisis response/3.png",
-            ],
-            title: "Google Crisis Response Slides",
-        },
-        {
-            images: [
                 "images/oneconcern/1.png",
                 "images/oneconcern/2.png",
                 "images/oneconcern/3.png",
@@ -41,15 +33,6 @@ var pieces = {
                 "images/new relic/4.png",
             ],
             title: "New Relic Corporate Pitch Deck Slides",
-        },
-        {
-            images: [
-                "images/google wwd/1.png",
-                "images/google wwd/2.png",
-                "images/google wwd/3.png",
-                "images/google wwd/4.png",
-            ],
-            title: "Google WWD Slides",
         },
         {
             images: [
@@ -73,13 +56,6 @@ var pieces = {
                 "images/telugu women - cardigan.png",
             ],
             //title: "Telugu Women Abroad in Wintertime",
-        },
-        {
-            images: [
-                "images/yoni ki baat - front.png",
-                "images/yoni ki baat - back.png",
-            ],
-            //title: "Yoni Ki Baat Flyer",
         },
         {
             images: [
