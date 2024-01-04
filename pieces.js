@@ -2,7 +2,7 @@ var pieces = {
     pieces: [
         {
             videos: [
-                "Meena Vempaty Motion Graphics Reel 2023",
+                "Meena Vempaty Motion Graphics Reel 2024",
             ],
             title: "Motion Graphics Reel",
         },
