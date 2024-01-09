@@ -55,6 +55,16 @@
                             </video>
                         </li>
                         {{/each}}
+                        {{#each videoloops}}
+                        <li class="image-list-item">
+                            <a href="{{this}}" data-lightbox="lightbox">
+                                <video class="piece-media piece-image" autoplay muted loop>
+                                    <source src="{{this}}.mp4" type="video/mp4">
+                                    Your browser does not support the HTML video tag.
+                                </video>
+                            </a>
+                        </li>
+                        {{/each}}
                         {{#each images}}
                         <li class="image-list-item">
                             <a href="{{this}}" data-lightbox="lightbox">

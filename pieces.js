@@ -14,6 +14,14 @@ var pieces = {
             description: "Work done for one company across three rebrands."
         },
         {
+            videoloops: [
+                "images/new relic social media template/intro",
+                "images/new relic social media template/title",
+                "images/new relic social media template/outro",
+            ],
+            title: "New Relic Social Media Video Template",
+        },
+        {
             images: [
                 "images/oneconcern/1.png",
                 "images/oneconcern/2.png",
@@ -41,6 +49,15 @@ var pieces = {
                 "images/airtable/3.png",
             ],
             title: "Airtable Corporate Pitch Deck Slides",
+        },
+        {
+            images: [
+                "images/looker/1.PNG",
+                "images/looker/2.PNG",
+                "images/looker/3.PNG",
+                "images/looker/4.PNG",
+            ],
+            title: "Looker Join Slides",
         },
         {
             images: [
