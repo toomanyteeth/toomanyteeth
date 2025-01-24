@@ -23,7 +23,7 @@
     <body>
 
         <div id="header">
-            <div id="title" class="accent-text">Meena Vempaty</div>
+            <div id="title">Meena Vempaty</div>
             <ul id="links">
                 <li class="about-link"><a href="https://www.instagram.com/infinitedimensionalvectorcake/" target="_blank"><img class="icon" src="icons/instagram.svg"></a></li>
                 <li class="about-link"><a href="https://www.redbubble.com/people/toomanyteeth/shop" target="_blank"><img class="icon" src="icons/redbubble.svg"></a></li>
@@ -43,9 +43,8 @@
             <ul id="pieces">
                 <script id="piecesTemplate" type="text/x-handlebars-template">
                 {{#each pieces}}
-                <hr>
                 <li class="piece">
-                    <p class="piece-info"><span class="piece-title accent-text">{{title}}</span> <span class="piece-description">{{{description}}}</span></p>
+                    <p class="piece-info"><span class="piece-title">{{title}}</span> <span class="piece-description">{{{description}}}</span></p>
                     <ul class="piece-images">
                         {{#each videos}}
                         <li class="image-list-item">
