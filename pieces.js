@@ -1,25 +1,11 @@
 var pieces = {
     pieces: [
         {
-            videos: [
-                "Meena Vempaty Motion Graphics Reel 2024",
-            ],
-            title: "Motion Graphics Reel",
-        },
-        {
-            videos: [
-                "Rebrand Reel 2023",
-            ],
-            title: "Rebrand Reel",
-            description: "Work done for one company across three rebrands."
-        },
-        {
             videoloops: [
-                "images/new relic social media template/intro",
-                "images/new relic social media template/title",
-                "images/new relic social media template/outro",
+                "images/slide animation samples/dot graph",
+                "images/slide animation samples/flowchart",
             ],
-            title: "New Relic Social Media Video Template",
+            title: "Slide Animation Samples",
         },
         {
             images: [
@@ -60,20 +46,41 @@ var pieces = {
             title: "Looker Join Slides",
         },
         {
+            videos: [
+                "Meena Vempaty Motion Graphics Reel 2024",
+            ],
+            title: "Motion Reel",
+        },
+        {
+            videos: [
+                "Rebrand Reel 2023",
+            ],
+            title: "Rebrand Reel",
+            description: "Work done for one company across three rebrands."
+        },
+        {
+            videoloops: [
+                "images/new relic social media template/intro",
+                "images/new relic social media template/title",
+                "images/new relic social media template/outro",
+            ],
+            title: "New Relic Social Media Video Template",
+        },
+        {
             images: [
                 "images/tvvr - sutro.jpg",
                 "images/tvvr - holiday.jpg",
             ],
             title: "TVVR Album Covers",
         },
-        {
+        /*{
             images: [
                 "images/telugu women - bomber.png",
                 "images/telugu women - puffer.png",
                 "images/telugu women - cardigan.png",
             ],
             //title: "Telugu Women Abroad in Wintertime",
-        },
+        },*/
         {
             images: [
                 "images/plantstellation - hands.png",
@@ -82,7 +89,7 @@ var pieces = {
             title: "plantstellation",
             description: "Arrange plants in augmented reality. Play it <a href=\"https:\/\/toomanyteeth.github.io\/plantstellation\/\" target=\"_blank\">here<\/a>."
         },
-        {
+        /*{
             images: [
                 "images/it sure is cold out here.gif",
             ],
@@ -105,17 +112,17 @@ var pieces = {
             ],
             //title: "Mythology Illustrations",
             description: "Illustrations for <a href=\"https:\/\/www.goodreads.com\/book\/show\/52050947-love-pride-virtue-and-fate\" target=\"_blank\">Love, Pride, Virtue, and Fate by Bharat Krishan<\/a>"
-        },
+        },*/
         {
             images: [
-                "images/misc - science poster.png",
-                "images/misc - chillhop raccoon.png",
-                "images/avakai - winter.jpg",
-                "images/misc - muggu mask.jpg",
+                //"images/misc - chillhop raccoon.png",
+                //"images/avakai - winter.jpg",
                 "images/misc - xwp map.png",
-                "images/misc - donut cat.png",
-                "images/misc - devi.png",
+                "images/misc - muggu mask.jpg",
+                //"images/misc - donut cat.png",
+                //"images/misc - devi.png",
                 "images/misc - iso plants.png",
+                "images/misc - science poster.png",
             ],
             //title: "Miscellaneous Illustrations"
         },

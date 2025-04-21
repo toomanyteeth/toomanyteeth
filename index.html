@@ -24,18 +24,20 @@
 
         <div id="header">
             <div id="title">Meena Vempaty</div>
-            <ul id="links">
-                <li class="about-link"><a href="https://www.instagram.com/infinitedimensionalvectorcake/" target="_blank"><img class="icon" src="icons/instagram.svg"></a></li>
-                <li class="about-link"><a href="https://www.redbubble.com/people/toomanyteeth/shop" target="_blank"><img class="icon" src="icons/redbubble.svg"></a></li>
-                <li class="about-link"><a href="mailto:meenamakesthings@gmail.com"><img class="icon" src="icons/email.svg"></a></li>
-            </ul>
         </div>
 
         <div id="content">
 
-            <p id="about">
-                Nice to meet you! I'm a designer with <span id="experience">#</span> years of experience. Contact me here: <a href="mailto:meenamakesthings@gmail.com">meenamakesthings@gmail.com</a>
-            </p>
+            <div id="about">
+                <p>
+                    Nice to meet you! I'm a presentation designer with <span id="experience">#</span> years of experience, plus complementary skills in motion graphics and illustration. Let's chat: <a href="mailto:meenamakesthings@gmail.com">meenamakesthings@gmail.com</a>
+                </p>
+                <ul id="links">
+                    <li class="about-link"><a href="mailto:meenamakesthings@gmail.com"><img class="icon" src="icons/email.svg"></a></li>
+                    <li class="about-link"><a href="Meena Vempaty Resume 2025.pdf" target="_blank"><img class="icon" src="icons/resume.svg"></a></li>
+                    <li class="about-link"><a href="https://www.linkedin.com/in/makesthings" target="_blank"><img class="icon" src="icons/linkedin.svg"></a></li>
+                </ul>
+            </div>
             <script>
                 document.getElementById("experience").innerHTML = new Date().getFullYear() - 2015;
             </script>
@@ -43,6 +45,7 @@
             <ul id="pieces">
                 <script id="piecesTemplate" type="text/x-handlebars-template">
                 {{#each pieces}}
+                <hr>
                 <li class="piece">
                     <p class="piece-info"><span class="piece-title">{{title}}</span> <span class="piece-description">{{{description}}}</span></p>
                     <ul class="piece-images">
@@ -56,12 +59,10 @@
                         {{/each}}
                         {{#each videoloops}}
                         <li class="image-list-item">
-                            <a href="{{this}}" data-lightbox="lightbox">
-                                <video class="piece-media piece-image" autoplay muted loop>
-                                    <source src="{{this}}.mp4" type="video/mp4">
-                                    Your browser does not support the HTML video tag.
-                                </video>
-                            </a>
+                            <video class="piece-media piece-image" autoplay muted loop>
+                                <source src="{{this}}.mp4" type="video/mp4">
+                                Your browser does not support the HTML video tag.
+                            </video>
                         </li>
                         {{/each}}
                         {{#each images}}
