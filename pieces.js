@@ -47,7 +47,7 @@ var pieces = {
         },
         {
             videos: [
-                "Meena Vempaty Motion Graphics Reel 2024",
+                "Meena Vempaty Motion Graphics Reel 2025",
             ],
             title: "Motion Reel",
         },
