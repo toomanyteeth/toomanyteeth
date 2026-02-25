@@ -22,7 +22,8 @@
 
     <body>
 
-        <div id="header"></div>
+        <div id="header">
+        </div>
 
         <div id="content">
 
@@ -38,7 +39,6 @@
             <ul id="pieces">
                 <script id="piecesTemplate" type="text/x-handlebars-template">
                 {{#each pieces}}
-                <hr>
                 <li class="piece">
                     <p class="piece-info"><span class="piece-title">{{title}}</span> <span class="piece-description">{{{description}}}</span></p>
                     <ul class="piece-images">
