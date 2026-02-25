@@ -22,9 +22,7 @@
 
     <body>
 
-        <div id="header">
-            <div id="title">Meena Vempaty</div>
-        </div>
+        <div id="header"></div>
 
         <div id="content">
 
@@ -32,11 +30,6 @@
                 <p>
                     Nice to meet you! I'm a presentation designer with <span id="experience">#</span> years of experience, plus complementary skills in motion graphics and illustration. Let's chat: <a href="mailto:meenamakesthings@gmail.com">meenamakesthings@gmail.com</a>
                 </p>
-                <ul id="links">
-                    <li class="about-link"><a href="mailto:meenamakesthings@gmail.com"><img class="icon" src="icons/email.svg"></a></li>
-                    <li class="about-link"><a href="Meena Vempaty Resume 2025.pdf" target="_blank"><img class="icon" src="icons/resume.svg"></a></li>
-                    <li class="about-link"><a href="https://www.linkedin.com/in/makesthings" target="_blank"><img class="icon" src="icons/linkedin.svg"></a></li>
-                </ul>
             </div>
             <script>
                 document.getElementById("experience").innerHTML = new Date().getFullYear() - 2015;
@@ -78,6 +71,7 @@
             </script></ul>
 
             <script>
+                $("#header").load( "header.html" );
                 var template = Handlebars.compile(document.getElementById('piecesTemplate').innerHTML);
                 document.getElementById('pieces').innerHTML = template(pieces);
                 lightbox.option({
