@@ -1,0 +1,36 @@
+<h2 id="page-title">{{pageTitle}}</h2>
+<p id="page-description">{{{pageDescription}}}</p>
+
+<ul id="pieces">
+    {{#each pieces}}
+        <li class="piece">
+            <h3 class="piece-title">{{title}}</h3>
+            <p class="piece-description">{{{description}}}</p>
+            <ul class="piece-images">
+                {{#each videos}}
+                <li class="image-list-item">
+                    <video class="piece-media piece-video" poster="{{this}}.png" width="1920" height="1080" controls>
+                        <source src="{{this}}.mp4" type="video/mp4">
+                        Your browser does not support the HTML video tag.
+                    </video>
+                </li>
+                {{/each}}
+                {{#each videoloops}}
+                <li class="image-list-item">
+                    <video class="piece-media piece-image" autoplay muted loop>
+                        <source src="{{this}}.mp4" type="video/mp4">
+                        Your browser does not support the HTML video tag.
+                    </video>
+                </li>
+                {{/each}}
+                {{#each images}}
+                <li class="image-list-item">
+                    <a href="{{this}}" data-lightbox="lightbox">
+                        <img class="piece-media piece-image" src="{{this}}">
+                    </a>
+                </li>
+                {{/each}}
+            </ul>
+        </li>
+    {{/each}}
+</ul>

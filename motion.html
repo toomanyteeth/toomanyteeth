@@ -1,0 +1,53 @@
+<!doctype html>
+
+<html lang="en">
+
+    <head>
+
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>Meena Vempaty's Portfolio: Motion Graphics</title>
+        <meta name="description" content="Meena Vempaty's portfolio">
+        <meta name="author" content="Meena Vempaty">
+
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="stylesheet" type="text/css" href="lightbox/lightbox.css"/>
+        <script src="motion.js"></script>
+        <script src="template.hbs"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.4.0/handlebars.js"></script>
+        <script src="lightbox/lightbox.js"></script>
+
+    </head>
+
+    <body>
+
+        <div id="header"></div>
+
+        <div id="content"></div>
+
+        <script>
+            $.get("header.html", function(data) {
+                $("#header" ).html(data);
+            });
+
+            $.get('template.hbs', function(data) {
+                var template = Handlebars.compile(data);
+                document.getElementById('content').innerHTML = template(info);
+            }, 'html');
+
+            lightbox.option({
+                'albumLabel': "%1/%2",
+                'disableScrolling': true,
+                'fadeDuration': 100,
+                'imageFadeDuration': 100,
+                'resizeFadeDuration': 100,
+                'showImageNumberLabel': false,
+                'wrapAround': true
+            });
+        </script>
+
+    </body>
+
+</html>

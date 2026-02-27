@@ -7,7 +7,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>Meena Vempaty</title>
+        <title>Meena Vempaty's Portfolio</title>
         <meta name="description" content="Meena Vempaty's portfolio">
         <meta name="author" content="Meena Vempaty">
 
@@ -22,70 +22,41 @@
 
     <body>
 
-        <div id="header">
-        </div>
+        <div id="header"></div>
 
         <div id="content">
 
             <div id="about">
-                <p>
-                    Nice to meet you! I'm a presentation designer with <span id="experience">#</span> years of experience, plus complementary skills in motion graphics and illustration. Let's chat: <a href="mailto:meenamakesthings@gmail.com">meenamakesthings@gmail.com</a>
-                </p>
+                <p>Nice to meet you! I'm a presentation designer with <span id="experience">#</span> years of experience, plus complementary skills in motion graphics and illustration. Let's chat: <a href="mailto:meenamakesthings@gmail.com">meenamakesthings@gmail.com</a></p>
             </div>
             <script>
                 document.getElementById("experience").innerHTML = new Date().getFullYear() - 2015;
             </script>
 
-            <ul id="pieces">
-                <script id="piecesTemplate" type="text/x-handlebars-template">
-                {{#each pieces}}
-                <li class="piece">
-                    <p class="piece-info"><span class="piece-title">{{title}}</span> <span class="piece-description">{{{description}}}</span></p>
-                    <ul class="piece-images">
-                        {{#each videos}}
-                        <li class="image-list-item">
-                            <video class="piece-media piece-video" poster="{{this}}.png" width="1920" height="1080" controls>
-                                <source src="{{this}}.mp4" type="video/mp4">
-                                Your browser does not support the HTML video tag.
-                            </video>
-                        </li>
-                        {{/each}}
-                        {{#each videoloops}}
-                        <li class="image-list-item">
-                            <video class="piece-media piece-image" autoplay muted loop>
-                                <source src="{{this}}.mp4" type="video/mp4">
-                                Your browser does not support the HTML video tag.
-                            </video>
-                        </li>
-                        {{/each}}
-                        {{#each images}}
-                        <li class="image-list-item">
-                            <a href="{{this}}" data-lightbox="lightbox">
-                                <img class="piece-media piece-image" src="{{this}}">
-                            </a>
-                        </li>
-                        {{/each}}
-                    </ul>
-                </li>
-                {{/each}}
-            </script></ul>
-
-            <script>
-                $("#header").load( "header.html" );
-                var template = Handlebars.compile(document.getElementById('piecesTemplate').innerHTML);
-                document.getElementById('pieces').innerHTML = template(pieces);
-                lightbox.option({
-                    'albumLabel': "%1/%2",
-                    'disableScrolling': true,
-                    'fadeDuration': 100,
-                    'imageFadeDuration': 100,
-                    'resizeFadeDuration': 100,
-                    'showImageNumberLabel': false,
-                    'wrapAround': true
-                })
-            </script>
+            <ul id="sectionLinks">
+                <li class="sectionLink"><a href="event.html">
+                    <div class="sectionLinkText"><h3>Event<br>Presentations</h3></div>
+                    <img class="sectionLinkImage" src="images/oneconcern/1.png">
+                </a></li>
+                <li class="sectionLink"><a href="decks.html">
+                    <div class="sectionLinkText"><h3>Pitch Decks<br>& Templates</h3></div>
+                    <img class="sectionLinkImage" src="images/oneconcern/1.png">
+                </a></li>
+                <li class="sectionLink"><a href="motion.html">
+                    <div class="sectionLinkText"><h3>Motion<br>Graphics</h3></div>
+                    <img class="sectionLinkImage" src="images/oneconcern/1.png">
+                </a></li>
+                <li class="sectionLink"><a href="illustration.html">
+                    <div class="sectionLinkText"><h3>Illustration</h3></div>
+                    <img class="sectionLinkImage" src="images/oneconcern/1.png">
+                </a></li>
+            </ul>
 
         </div>
+        
+        <script>
+            $("#header").load("header.html");
+        </script>
 
     </body>
 
