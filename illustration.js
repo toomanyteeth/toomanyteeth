@@ -10,6 +10,9 @@ var info = {
             title: "TVVR Album Covers",
         },
         {
+            videoloops: [
+                "images/chillits graphic 2025",
+            ],
             images: [
                 //"images/misc - chillhop raccoon.png",
                 //"images/avakai - winter.jpg",
