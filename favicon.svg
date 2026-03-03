@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 512 512">
+  <!-- Generator: Adobe Illustrator 29.5.1, SVG Export Plug-In . SVG Version: 2.1.0 Build 141)  -->
+  <defs>
+    <style>
+      .st0 {
+        fill: #fff;
+        font-family: Lato-Black, Lato;
+        font-size: 233.4px;
+        font-weight: 800;
+        letter-spacing: 0em;
+      }
+    </style>
+  </defs>
+  <circle cx="256" cy="256" r="256"/>
+  <text class="st0" transform="translate(53.4 336)"><tspan x="0" y="0">MV</tspan></text>
+</svg>
