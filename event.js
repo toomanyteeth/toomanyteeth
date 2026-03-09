@@ -4,6 +4,8 @@ var info = {
     pieces: [
         {
             videoloops: [
+                "images/slide animation samples/timeline",
+                "images/slide animation samples/roadmap",
                 "images/slide animation samples/dot graph",
                 "images/slide animation samples/flowchart",
             ],
