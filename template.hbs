@@ -7,44 +7,38 @@
             <h3 class="piece-title">{{title}}</h3>
             <p class="piece-description">{{{description}}}</p>
             <ul class="piece-images">
+                
                 {{#each videos}}
-                <li class="image-list-item">
-                    <video class="piece-media piece-video" poster="{{this}}.png" width="1920" height="1080" controls>
-                        <source src="{{this}}.mp4" type="video/mp4">
-                        Your browser does not support the HTML video tag.
-                    </video>
-                </li>
-                {{/each}}
-                {{#each videoloops}}
-                <li class="image-list-item">
-                    <a href="{{this}}" data-lightbox="lightbox">
-                        <video class="piece-media piece-image" autoplay muted loop>
+                    <li class="image-list-item">
+                        
+                        <video class="piece-media piece-video" poster="{{this}}.png" width="1920" height="1080" controls>
                             <source src="{{this}}.mp4" type="video/mp4">
                             Your browser does not support the HTML video tag.
                         </video>
-                    </a>
-                </li>
+
+                    </li>
                 {{/each}}
+
+                {{#each videoloops}}
+                    <li class="image-list-item">
+                        
+                            <video class="piece-media piece-image" autoplay muted loop>
+                                <source src="{{this}}.mp4" type="video/mp4">
+                                Your browser does not support the HTML video tag.
+                            </video>
+                        
+                    </li>
+                {{/each}}
+
                 {{#each images}}
-                <li class="image-list-item">
-                    <a href="{{this}}" data-lightbox="lightbox">
-                        <img class="piece-media piece-image" src="{{this}}">
-                    </a>
-                </li>
+                    <li class="image-list-item">
+                        <a data-fslightbox href="{{this}}">
+                            <img class="piece-media piece-image" src="{{this}}">
+                        </a>
+                    </li>
                 {{/each}}
+
             </ul>
         </li>
     {{/each}}
 </ul>
-
-<script>
-    lightbox.option({
-        'albumLabel': "%1/%2",
-        'disableScrolling': true,
-        'fadeDuration': 100,
-        'imageFadeDuration': 100,
-        'resizeFadeDuration': 100,
-        'showImageNumberLabel': false,
-        'wrapAround': true
-    });
-</script>
