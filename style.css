@@ -112,6 +112,7 @@ body > div {
     font-family: 'Instrument Serif', sans-serif;
     font-size: 4em;
     line-height: 1em;
+    text-transform: uppercase;
 }
 
 #title > a {
