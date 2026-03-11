@@ -34,10 +34,11 @@
             $.get('template.hbs', function(data) {
                 var template = Handlebars.compile(data);
                 document.getElementById('content').innerHTML = template(info);
+                $.getScript("fslightbox/fslightbox.js", function() {
+                    fsLightbox.props.maxScale = true;
+                });
             }, 'html');
         </script>
-
-        <script src="fslightbox/fslightbox.js"></script>
 
     </body>
 
