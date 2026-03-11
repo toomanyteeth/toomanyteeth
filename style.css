@@ -229,6 +229,10 @@ body > div {
     background-color: #171717;
 }
 
+.fslightbox-nav {
+    display: none !important;
+}
+
 @media (max-width: 900px) {
 
     #section-links {

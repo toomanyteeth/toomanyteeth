@@ -10,12 +10,10 @@
                 
                 {{#each videos}}
                     <li class="image-list-item">
-                        <a data-fslightbox data-controls href="{{this}}.mp4">
-                            <video class="piece-media piece-video" poster="{{this}}.png" width="1920" height="1080" controls>
-                                <source src="{{this}}.mp4" type="video/mp4">
-                                Your browser does not support the HTML video tag.
-                            </video>
-                        </a>
+                        <video class="piece-media piece-video" poster="{{this}}.png" width="1920" height="1080" controls>
+                            <source src="{{this}}.mp4" type="video/mp4">
+                            Your browser does not support the HTML video tag.
+                        </video>
                     </li>
                 {{/each}}
 
